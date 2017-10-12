@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>移动</title>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="./Drag.css"/>
+</head>
+<body>
+
+	<div id="container">
+		<div id="myDrag">DIV1</div>	
+
+		<div id="myDrag2">DIV2</div>
+	</div>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="./Drag.js"></script>
+
+	<script type="text/javascript">
+
+		/**
+		 *	使用说明
+		 *	参数：
+		 *		fullScreen: 可移动区域是否全屏 false true --- 尚未实现,
+		 *		container: 可移动区域，默认为目标的上一层元素空间,
+		 *		drag: 可拖动 默认true,
+		 *	 	resize: 可改变大小 默认true,
+		 */
+
+		
+		$("#myDrag").xingquanDrag();
+
+		$("#myDrag2").xingquanDrag();
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+@charset 'utf-8';
+
+
+#container {
+	width: 800px;
+	height: 500px;
+	margin: 50px auto;
+	border: 1px solid #ccc;
+	box-sizing: content-box;
+	position: relative;
+}
+
+#myDrag {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	box-shadow: 0 0px 10px rgba(33, 133, 208, 1);
+}
+
+#myDrag2{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	box-shadow: 0 0px 10px rgba(33, 133, 208, 1);
+}
+
+.point{
+	position: absolute;
+    width: 12px;
+    height: 12px;
+    z-index: 5;
+    border: 1px solid #d5ece8;
+    border-radius: 100%;
+    box-shadow: 0 0 5px #eee;
+    -moz-box-shadow: 0 0 5px #eee;
+    -webkit-box-shadow: 0 0 5px #eee;
+    background-color: #2185d0;
+}
+
+.left {
+	left : -7px;
+	cursor : w-resize;
+}
+
+.right {
+	right : -7px;
+	cursor : w-resize;
+}
+
+.up {
+	top : -7px;
+	cursor : s-resize;
+}
+
+.down {
+	bottom : -7px;
+	cursor : s-resize;
+}
+
+.leftUp {
+	left : -7px;
+	top : -7px;
+	cursor : nw-resize
+}
+
+.rightUp {
+	right : -7px;
+	top : -7px;
+	cursor : ne-resize
+}
+
+.leftDown {
+	left : -7px;
+	bottom : -7px;
+	cursor : sw-resize
+}
+
+.rightDown {
+	right : -7px;
+	bottom : -7px;
+	cursor : se-resize
+}
+
+
+
+[class^="xingquanDrag"].select:active{
+	cursor: move;
+}
+
+
+.hidden{
+	display: none;
+}
+
+.show{
+	display: inline;
+}
